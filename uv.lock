@@ -1298,6 +1298,18 @@ wheels = [
 ]
 
 [[package]]
+name = "pythainlp"
+version = "5.3.3"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/8b/38/df3a9f7042158269a758b975273fd06c7f2b1fb4a1153cabc78506e889f0/pythainlp-5.3.3.tar.gz", hash = "sha256:c7e5d43238ac882479dd3f303e76838255ba7358da77553ed2a1296395ffe7b5", size = 19306211, upload-time = "2026-03-26T11:53:28.159Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/d1/c4/a24d9e3094487d2961a1c16f8ce659b45f4b2446b79c9de376035e846e7f/pythainlp-5.3.3-py3-none-any.whl", hash = "sha256:b223291af6dba4882702272812e5927fc2eb2848cd657c8c2a2a13ca50ed6161", size = 19849553, upload-time = "2026-03-26T11:53:25.404Z" },
+]
+
+[[package]]
 name = "python-dateutil"
 version = "2.9.0.post0"
 source = { registry = "https://pypi.org/simple" }
@@ -1694,6 +1706,7 @@ dependencies = [
     { name = "numpy" },
     { name = "ollama" },
     { name = "pandas" },
+    { name = "pythainlp" },
     { name = "rank-bm25" },
     { name = "requests" },
     { name = "sentence-transformers" },
@@ -1708,6 +1721,7 @@ requires-dist = [
     { name = "numpy", specifier = ">=2.4.3" },
     { name = "ollama", specifier = ">=0.6.1" },
     { name = "pandas", specifier = ">=3.0.1" },
+    { name = "pythainlp", specifier = ">=5.3.3" },
     { name = "rank-bm25", specifier = ">=0.2.2" },
     { name = "requests", specifier = ">=2.33.0" },
     { name = "sentence-transformers", specifier = ">=5.3.0" },
